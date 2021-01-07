@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<style>
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #222223;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #2e2e35;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+</style>
+
+  <head>
+    <meta charset="utf-8">
+    <title> website </title>
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+  </head>
+  <body onload="playAudio()">
+
+    <div class="MainWindowContainer">
+      <img src="extra.jpg" alt "back" style="width:100%">
+
+      <menu class="Fuck">
+        <ul>
+          <li class="Name">Nax</li>
+          <li > <a href="https://github.com/JoshuaBarrass" class="Link">Github</a></li>
+          <li class="Other">Steam</li>
+          <li class="Other">Collage</li>
+          <li class="Other">Youtube</li>
+          <li><a href="https://twitter.com/naxuhh" class="Link">Twitter</a></li>
+          <li class="Other">Instagram</li>
+        </ul>
+      </menu>
+
+    </div>
+    <audio class="music" id="ID"><source src="video.mp3" type="audio/mpeg">
+    </audio>
+
+
+  </body>
+
+  <script>
+    document.addEventListener('click', musicPlay);
+    function musicPlay() {
+      document.getElementById('ID').play();
+      document.removeEventListener('click', musicPlay);
+    }
+  </script>
+</html>
